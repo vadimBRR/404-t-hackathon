@@ -1,5 +1,5 @@
 import React from 'react'
-import doc_example from './../../assets/doc_example.png'
+import doc_example from '../../assets/doc_example.png'
 
 const TemplateCard = () => {
   return (
