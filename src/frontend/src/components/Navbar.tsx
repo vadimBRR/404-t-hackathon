@@ -15,8 +15,8 @@ const Navbar = () => {
 			link: '/' },
 		{
 			id: 2,
-			name: '',
-			link: '/templates',
+			name: 'Templates',
+			link: '/',
 		},
 		// {id: 2,
 		//   name: 'Profiles',
@@ -42,7 +42,7 @@ const Navbar = () => {
 					
 						onClick={() => setActive(item.id)}
 					>
-						<p 	className={` text-white  ${active === item.id ? 'text-2xl font-bold' : 'text-xl'} `}>{item.name}</p>
+						<p 	className={` text-white  ${2 === item.id ? 'text-2xl font-bold' : 'text-xl'} `}>{item.name}</p>
 					</Link>
 				))}
 			</div>

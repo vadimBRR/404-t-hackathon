@@ -1,3 +1,4 @@
+import { Share } from 'lucide-react'
 import React, { useState } from 'react'
 
 const FileUploader = () => {
@@ -33,10 +34,10 @@ const FileUploader = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center w-full max-w-md mx-auto">
+    <div className="flex flex-col items-center justify-center w-full max-w-md mx-auto ">
       <div
-        className={`border-2 border-dashed rounded-lg w-full p-6 text-center cursor-pointer transition ${
-          dragging ? 'border-blue-500 bg-blue-100' : 'border-gray-300 bg-gray-50'
+        className={`border-2 border-dashed rounded-lg w-full p-6 text-center cursor-pointer transition py-20 ${
+          dragging ? 'border-blue-500 bg-primary' : 'border-primary bg-gray-50'
         }`}
         onDrop={handleDrop}
         onDragOver={handleDragOver}
@@ -44,14 +45,16 @@ const FileUploader = () => {
         onClick={() => document.getElementById('fileInput')?.click()}
       >
         {file ? (
-          <div className="text-gray-700">
-            <p className="font-semibold">Завантажений файл:</p>
+          <div className="text-gray-700 ">
+            <p className="font-semibold">Uploaded File:</p>
             <p className="truncate">{file.name}</p>
           </div>
         ) : (
-          <div>
-            <p className="font-semibold text-gray-500">Перетягніть файл сюди</p>
-            <p className="text-sm text-gray-400">або натисніть для вибору</p>
+          <div className='flex flex-col items-center '>
+            <div className='w-[70%] flex flex-col items-center gap-5'>
+              <Share color='#e10075' size={40} />
+              <p className="font-semibold text-gray-500">Drop a file here to upload, or click here to browse</p>
+              </div>
           </div>
         )}
       </div>
@@ -67,7 +70,7 @@ const FileUploader = () => {
           className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
           onClick={() => setFile(null)}
         >
-          Видалити файл
+          Delete File
         </button>
       )}
     </div>

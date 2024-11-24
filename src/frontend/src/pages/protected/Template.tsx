@@ -1,6 +1,8 @@
-import { useParams, useSearchParams } from 'react-router-dom'
+import { useParams, useSearchParams, Link } from 'react-router-dom'
+import { ChevronLeft, Check, CircleDot } from 'lucide-react'
 import Container from '../../components/Container'
 import { templates } from '../../constatns'
+import { employees } from '../../constatns'
 import TemplateCard from '../../components/MainPage/TemplateCard'
 import { Share } from 'lucide-react'
 const Templates = () => {
@@ -37,25 +39,35 @@ const Templates = () => {
 						</div>
 
 						<div>
-							<div className='flex flex-row my-10'>
-								<div
-									className={` w-7 h-7 bg-[#FF0000] rounded-full flex items-center justify-center mr-2`}
-								>
-									<p className='text-white'>{template.new_users}</p>
+							<div className='flex flex-col my-10'>
+								<div className='flex flex-row mb-15'>
+									<div
+										className={` w-7 h-7 bg-[#FF0000] rounded-full flex items-center justify-center mr-2`}
+									>
+										<p className='text-white'>{template.new_users}</p>
+									</div>
+									<p className='text-2xl font-bold'>Inbox for this template</p>
 								</div>
-								<p className='text-2xl font-bold'>Inbox for this template</p>
-								{/* {advice.map(item => (
-									<Link to={`/product/${item.id}`}>
-										<div key={item.id}>
-											<div className='flex flex-row justify-between items-center bg-white p-4 px-3 border-b border-[#C4C4C4]  '>
-												<div className='flex flex-row items-center gap-3'>
-													<Check color='#0cb33f' size={24} />
-													<p className='text-base'>{item.name}</p>
+
+								<div className='flex w-10/12 flex-col'>
+									{employees.map(item => (
+										<Link to={`/product/${item.document_id}`}>
+											<div key={item.document_id}>
+												<div className='flex flex-row justify-between items-center bg-white p-4 px-3 border-b border-[#C4C4C4]  '>
+													<div className='flex flex-row items-center gap-5'>
+														{item.read_state ? (
+															<Check color='#0cb33f' size={20} />
+														) : (
+															<CircleDot color='#b31d0c' size={20} />
+														)}
+
+														<p className='text-base'>{item.email}</p>
+													</div>
 												</div>
 											</div>
-										</div>
-									</Link>
-								))} */}
+										</Link>
+									))}
+								</div>
 							</div>
 						</div>
 					</div>

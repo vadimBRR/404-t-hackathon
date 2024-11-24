@@ -19,12 +19,11 @@ class DocumentDetail(Base):
     id = Column(Integer, primary_key=True, index=True)
     document_id = Column(Integer, ForeignKey("documents.id"), unique=True)
     is_checked = Column(Boolean, default=False)
-    ai_standard_completed = Column(Integer, default=0)  # Відсоток виконання
-    benefits_from_signing_it = Column(Integer, default=0)  # Відсотки вигоди
+    ai_standard_completed = Column(Integer, default=0)  
+    benefits_from_signing_it = Column(Integer, default=0)  
 
     document = relationship("Document", back_populates="detail")
 
-# Оновлення зв'язку в Document
 class Document(Base):
     __tablename__ = "documents"
 

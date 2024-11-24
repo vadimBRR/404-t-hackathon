@@ -6,6 +6,7 @@ import SignUp from './pages/auth/SignUp'
 import RootLayout from './pages/protected/RootLayout'
 import Home from './pages/protected/Home'
 import Templates from './pages/protected/Template'
+import CreateFormular from './pages/protected/CreateFormular'
 
 function App() {
 	return (
@@ -21,6 +22,7 @@ function App() {
 					{/* <Route path='/receipts' element={<Receipts />} /> */}
 					{/* <Route path='/receipts/:id' element={<ReceiptsInfo />} /> */}
 					<Route path='/templates/:id' element={<Templates />} />
+          <Route path='/add-template' element={<CreateFormular/>}/>
 					{/* <Route path='/receipts-gen/:id' element={<ReceiptsGeneralInfo />} /> */}
 					{/* <Route path='/product/:id/:transaction_id' element={<ProductInfo />} /> */}
 				</Route>
