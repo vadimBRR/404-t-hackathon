@@ -40,7 +40,7 @@ const Templates = () => {
 
 						<div>
 							<div className='flex flex-col my-10'>
-								<div className='flex flex-row mb-15'>
+								<div className='flex flex-row mb-[28px]'>
 									<div
 										className={` w-7 h-7 bg-[#FF0000] rounded-full flex items-center justify-center mr-2`}
 									>
@@ -51,9 +51,10 @@ const Templates = () => {
 
 								<div className='flex w-10/12 flex-col'>
 									{employees.map(item => (
-										<Link to={`/product/${item.document_id}`}>
+										<Link className='mb-[1px]' to={`/ConcreteDocument/${item.document_id}`}>
 											<div key={item.document_id}>
-												<div className='flex flex-row justify-between items-center bg-white p-4 px-3 border-b border-[#C4C4C4]  '>
+											{/* border-b border-[#C4C4C4] */}
+												<div className='flex flex-row justify-between items-center bg-white p-4 px-3 shadow-[0px_4px_4px_0px_rgba(0,_0,_0,_0.25)]'> 
 													<div className='flex flex-row items-center gap-5'>
 														{item.read_state ? (
 															<Check color='#0cb33f' size={20} />
@@ -63,6 +64,9 @@ const Templates = () => {
 
 														<p className='text-base'>{item.email}</p>
 													</div>
+													<div className='text-[#32C200]'>{item.alert}</div>
+													{/* #D79B00 */}
+													{/* #EE0000 */}
 												</div>
 											</div>
 										</Link>
@@ -72,7 +76,7 @@ const Templates = () => {
 						</div>
 					</div>
 					<div className='flex flex-col gap-4 w-[80%]'>
-						<h1>AI generated description of the document</h1>
+						<h1 className='text-[40px] font-bold'>AI generated description of the document</h1>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
 							praesentium recusandae quis quas? Maiores dignissimos pariatur

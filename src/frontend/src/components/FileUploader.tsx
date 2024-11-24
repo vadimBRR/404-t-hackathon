@@ -1,5 +1,6 @@
 import { Share } from 'lucide-react'
 import React, { useState } from 'react'
+import { handleOnSubmit } from '../api/index';
 
 const FileUploader = () => {
   const [file, setFile] = useState<File | null>(null);
@@ -66,12 +67,20 @@ const FileUploader = () => {
         accept="*"
       />
       {file && (
-        <button
-          className="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition"
-          onClick={() => setFile(null)}
-        >
-          Delete File
-        </button>
+          <div className=' mt-4 flex w-full gap-2 justify-end'>
+            <button
+              className="px-4 py-2 bg-red-500 text-[#000000] rounded-lg hover:bg-red-600 transition"
+              onClick={() => setFile(null)}
+            >
+              Delete File
+            </button>
+            <button
+              className="px-4 py-2 bg-red-500 text-[#000000] rounded-lg hover:bg-red-600 transition"
+              onClick={(e) => handleOnSubmit(e,file)}
+            >
+              Submit
+            </button>
+          </div>
       )}
     </div>
   )

@@ -152,3 +152,41 @@ export const useGetSimilarProducts = ({id}: {id:string}) => {
     }
   })
 }  
+
+
+
+export async function handleOnSubmit(
+  e: React.MouseEvent<HTMLButtonElement>,
+  file: File
+) {
+  e.preventDefault();
+
+  try {
+    if (!file) {
+      throw new Error('No file selected');
+    }
+
+    const formData = new FormData();
+    formData.append('file', file);
+
+    const response = await fetch('/api/upload_templates/', {
+      method: 'POST',
+      body: formData,
+      headers: {
+        'Accept': 'application/json',
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const results = await response.json();
+    console.log('Upload successful:', results);
+    return results;
+
+  } catch (error) {
+    console.error('Error uploading file:', error);
+    throw error;
+  }
+}
