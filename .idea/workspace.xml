@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a4b896b4-2713-4663-9721-74e6a48191fa" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/backend/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/backend/pdf_to_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/backend/pdf_to_text.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +42,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
-    "last_opened_file_path": "C:/Users/User/PycharmProjects/404-t-hackathon/src/backend/data",
+    "last_opened_file_path": "C:/Users/User/PycharmProjects/404-t-hackathon/src/backend/data/input",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -53,6 +53,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\404-t-hackathon\src\backend\data\input" />
       <recent name="C:\Users\User\PycharmProjects\404-t-hackathon\src\backend\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -77,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1732380310850</updated>
       <workItem from="1732380311911" duration="12637000" />
-      <workItem from="1732401658936" duration="5707000" />
+      <workItem from="1732401658936" duration="9861000" />
     </task>
     <servers />
   </component>
@@ -85,7 +86,7 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/404_t_hackathon$diff_text.coverage" NAME="diff_text Coverage Results" MODIFIED="1732438990488" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/backend" />
-    <SUITE FILE_PATH="coverage/404_t_hackathon$main.coverage" NAME="main Coverage Results" MODIFIED="1732399413878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/404_t_hackathon$diff_text.coverage" NAME="diff_text Coverage Results" MODIFIED="1732439083257" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/backend" />
+    <SUITE FILE_PATH="coverage/404_t_hackathon$main.coverage" NAME="main Coverage Results" MODIFIED="1732443444668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>
