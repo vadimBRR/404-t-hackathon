@@ -3,3 +3,5 @@ pdfplumber
 PyMuPDF
 fastapi
 uvicorn
+pathlib
+python-multipart

@@ -7,13 +7,13 @@ from pathlib import Path
 
 app = FastAPI()
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["*"],
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+# )
 
 UPLOAD_DIR = Path("data/input")
 UPLOAD_DIR.parent.mkdir(exist_ok=True, parents=True)
