@@ -2,17 +2,20 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../providers/AuthProvider'
 import CustomButton from './CustomButton'
-import logo from '../assets/t_logo2.png'
+import logo from './../assets/t_logo2.png'
 
 const Navbar = () => {
 	// const {username, token,logout} = useAuth()
 
 	const [active, setActive] = React.useState(1)
 	const navLinks = [
-		{ id: 1, name: 'My HR office', link: '/' },
+		{ 
+			id: 1, 
+			name: 'My HR office', 
+			link: '/' },
 		{
 			id: 2,
-			name: 'Tamplates',
+			name: '',
 			link: '/templates',
 		},
 		// {id: 2,

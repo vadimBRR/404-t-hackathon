@@ -7,7 +7,7 @@ type Props = {
 const Container = ({children, isTopBar}:Props ) => {
 
   return (
-    <div className={`w-full h-full relative ${isTopBar ? 'pt-14' : ''}`}>
+    <div className={`w-full h-full relative px-16 ${isTopBar ? 'pt-14' : ''}`}>
       {children}
     </div>
   )

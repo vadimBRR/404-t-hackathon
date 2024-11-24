@@ -1,3 +1,11 @@
+export type TemplatesProps = {
+  id: string,
+  name: string,
+  images: string,
+  new_users:number
+  
+}
+
 export type ReceiptProps = {
   id: string,
   price: string,

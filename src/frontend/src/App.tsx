@@ -5,7 +5,7 @@ import SignIn from './pages/auth/SignIn'
 import SignUp from './pages/auth/SignUp'
 import RootLayout from './pages/protected/RootLayout'
 import Home from './pages/protected/Home'
-import Analisis from './pages/protected/Analisis'
+import Templates from './pages/protected/Template'
 
 function App() {
 	return (
@@ -20,9 +20,9 @@ function App() {
 					<Route path='/' element={<Home />} />
 					{/* <Route path='/receipts' element={<Receipts />} /> */}
 					{/* <Route path='/receipts/:id' element={<ReceiptsInfo />} /> */}
-					<Route path='/analysis' element={<Analisis />} />
+					<Route path='/templates/:id' element={<Templates />} />
 					{/* <Route path='/receipts-gen/:id' element={<ReceiptsGeneralInfo />} /> */}
-          {/* <Route path='/product/:id/:transaction_id' element={<ProductInfo />} /> */}
+					{/* <Route path='/product/:id/:transaction_id' element={<ProductInfo />} /> */}
 				</Route>
 			</Routes>
 		</div>

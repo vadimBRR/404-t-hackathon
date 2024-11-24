@@ -1,4 +1,89 @@
-import { ProductsType, ReceiptInfoType, ReceiptProps } from '../types'
+import { ProductsType, ReceiptInfoType, ReceiptProps, TemplatesProps } from '../types'
+
+export const templates:TemplatesProps[] = [
+  {
+    id:'543084',
+    name: 'Dohoda o brigade',
+    images: '',
+    new_users: 2
+    
+  },
+  {
+    id:'543085',
+    name: 'Dohoda o brigade',
+    images: '',
+    new_users: 1
+    
+  },
+  {
+    id:'543086',
+    name: 'Dohoda o brigade',
+    images: '',
+    new_users: 0
+    
+  },
+  {
+    id:'543087',
+    name: 'Dohoda o brigade',
+    images: '',
+    new_users: 0
+    
+  },
+  
+
+
+
+
+  {
+    id:'543088',
+    name: 'Dohoda o brigade',
+    images: '',
+    new_users: 0
+    
+  },
+  {
+    id:'543089',
+    name: 'Dohoda o brigade',
+    images: '',
+    new_users: 0
+    
+  },
+  {
+    id:'543090',
+    name: 'Dohoda o brigade',
+    images: '',
+    new_users: 0
+    
+  },
+  {
+    id:'543091',
+    name: 'Dohoda o brigade',
+    images: '',
+    new_users: 0
+    
+  },
+  {
+    id:'543092',
+    name: 'Dohoda o brigade',
+    images: '',
+    new_users: 0
+    
+  },
+  {
+    id:'543093',
+    name: 'Dohoda o brigade',
+    images: '',
+    new_users: 0
+    
+  },
+  {
+    id:'543094',
+    name: 'Dohoda o brigade',
+    images: '',
+    new_users: 0
+    
+  },
+]
 
 export const receipts: ReceiptProps[] = [
   {
@@ -52,29 +137,3 @@ export const receiptInfo: ReceiptInfoType[] = [{
   category: 'Zdravie a osobná starostlivosť'
 }
 ]
-
-export const products:ProductsType[] = [
-  {
-    id: '1',
-    name: 'NESTEA CITRÓN 1,5l',
-    img_url: 'https://lunys.sk/wp-content/uploads/2022/02/620c6fba4e5ef.jpg'
-  },
-  {
-    id: '2',
-    name: 'Šmak majon.400ml',
-    img_url:'https://lunys.sk/wp-content/uploads/2020/05/Majone%CC%81za-50-SPAK-5kg.jpg'
-  },
-
-  {
-    id: '3',
-    name: 'Jablko cvikla200ml',
-    img_url: 'https://cdn.myshoptet.com/usr/www.emilovesady.sk/user/shop/big/97_cvikla-200ml.png?63527cd9'
-  },
-  {
-    id: '4',
-    name: 'margar.Plmarin 250',
-    img_url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6wLfmaeZ3KC_C_HMFTK3EFpaYzKB2ogb-uw&s'
-  },
-]
-
-
