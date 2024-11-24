@@ -26,9 +26,10 @@ async def root():
 
 @app.post("/upload_templates/")
 async def upload_templates(file: UploadFile = File(...)):
-    file_path = UPLOAD_DIR / "input_templates.txt"
+    file_path = UPLOAD_DIR / "input_templates.pdf"
     with file_path.open("wb") as buffer:
         shutil.copyfileobj(file.file, buffer)
+
     return {"filename": file.filename, "message": "File uploaded successfully"}
 
 @app.get("/load_result")
